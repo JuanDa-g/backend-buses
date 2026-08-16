@@ -52,7 +52,7 @@ app.post('/api/chat', async (req, res) => {
   }
 })
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0' () => {
   console.log(`\n BusGo Chatbot API corriendo en http://localhost:${PORT}`)
   console.log(` Health check: http://localhost:${PORT}/api/health`)
   console.log(` Chat endpoint: POST http://localhost:${PORT}/api/chat\n`)
